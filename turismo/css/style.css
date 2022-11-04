@@ -1,0 +1,338 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+  ::placeholder{
+    font-weight: bold;
+    color: black;
+    
+  }
+
+.grid-container-main div img{
+    
+        display: flex;
+        
+    
+    margin-bottom: 50px;
+    margin-top: 80px;
+    display: flex;
+    
+    height: 280px;
+    width: 250px;
+}
+.t2{
+    text-align: center;
+    text-decoration: overline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-decoration-color: whitesmoke
+}
+
+  .grid-container-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a b c d"
+    ;
+  }
+  .index1{
+    
+        display: grid;
+        place-content: center;
+
+    grid-area: a;
+  }
+  .index2{
+    
+    display: grid;
+    place-content: center;
+    grid-area: b;
+  }
+  .index3{
+    
+    display: grid;
+    place-content: center;
+    grid-area: c;
+  }
+  .index4{
+    
+    display: grid;
+    place-content: center;
+    grid-area: d;
+  }
+  .grid-footer-index{
+    
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(226,226,226,1) 110%);
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 150px 250px;
+    grid-template-areas: 
+    
+    "a b"
+    "c d"
+    ;
+
+  }
+  .carousel{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .footer-contacto{
+    text-align: center;
+    text-decoration: overline;
+    grid-area: a;
+  }
+  .redes-index{
+ display: flex;
+ align-items: flex-end;
+ justify-content: right;
+    grid-area: d;
+  }
+  .formulario{
+    text-decoration: overline;
+    font-size: 28px;
+  }
+  .form-index{
+    text-align: center;
+    grid-area: b;
+    
+  }
+  .li-footer ul{
+    display: flex;
+    float: right;
+  }
+  .li-footer{
+grid-area: c;
+  }
+  #number{
+    width: 200px;
+  }
+  
+
+
+.redes a img {
+   
+   background-color: white;
+   border-radius: 5px;
+   padding: 5px;
+    width: 40px;
+    height: 40px;
+    margin-right: 25px;
+    
+    grid-area: img;
+    float: right;
+}
+.redes-index a img{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+     width: 40px;
+     height: 40px;
+
+}
+.redes img:hover {
+
+    transform: scale(1.2);
+}
+
+.footerTexto{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    
+    grid-area: texto;
+
+   
+    
+}
+.titulo-index-container{
+    display: grid;
+    
+    grid-template-rows: 90px;
+    grid-area: 
+    "a"
+    ;
+
+    
+}
+.titulo-index{
+    grid-area: a;
+}
+
+
+.slider-index{
+    
+   
+    
+    
+    display: flex;
+    height:100% ;
+    
+    
+   
+}
+
+
+
+
+
+.indeximg{
+    background-image: -moz-element(); /*seguir contruyendi*/
+}
+
+h4, h2,small,a{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    
+
+}
+
+
+/* images */
+
+.slick-list{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 304px;
+    padding: 10px 0px;
+    margin: 0px auto;
+    max-width: 100vw;
+    overflow: hidden;
+    
+    
+    
+    
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: .5s ease-in-out;
+    
+    
+    
+   
+    
+}
+.slick{
+    position: relative;
+    width: 275px;
+    padding: 0 18px;
+    float: left;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    
+    
+    
+    
+    
+}
+.slick h4{
+    position: absolute;
+    z-index: 1;
+    font-size: 22px;
+    line-height: 23px;
+    color: #fff;
+    padding: 15px;
+    
+    
+}
+.slick h4 small{
+    font-size: 15px;
+    display: block;
+    
+    
+    
+}
+.slick a img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    border-radius: 40px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.5);
+    transition: .3s ease-in-out;
+    animation: slide2 10s infinite alternate ease-in-out;
+    animation: slide 10s infinite alternate ease-in-out;
+   
+    
+    
+   
+    
+
+}
+.slick a img:hover{
+    opacity: .85;
+    
+    
+    
+}
+
+/* buttons */
+
+.slick-arrow{
+    border-radius: 30px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 4;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    border: 0;
+    cursor: pointer;
+    
+}
+.slick-arrow:focus{
+    outline: 0;
+}
+.slick-arrow svg{
+    width: 12px;
+    height: 100%;
+    color: rgba(0,0,0,.7);
+}
+.slick-prev{
+    left: 0px;
+    
+}
+.slick-next{
+    right: 0px;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	0% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+@keyframes slide2 {
+	100% {margin-left: 0;}
+	75% {margin-left: 0;}
+	
+	70% {margin-left: -100%;}
+	50% {margin-left: -100%;}
+	
+	45% {margin-left: -200%;}
+	25% {margin-left: -200%;}
+	
+	20% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cotizador online</title>
+</head>
+
+<body>
+    <header>
+        <h2>COTIZADOR EN CONSTRUCCION</h2>
+    </header>
+
+    <main>
+        <section>
+            <form id="formulario_agregar_pasajero">
+
+                <input type="text" id="nombre_producto" autocomplete="off" size="25"
+                    placeholder="Seleccionar pasajeros" />
+                <input type="number" id="stock_producto" autocomplete="off" min=0 max="150" />
+
+                <button type="submit" id="agregar_pasajero">Agregar Pasajeros</button> <br> <br>
+                <label>Tu mensaje:</label> <br> <br>
+                <textarea name="mensaje" cols="70" rows="2"></textarea> <br>
+
+            </form>
+            <p id="parrafo"></p>
+
+
+
+            <table id="tabla_productos">
+
+                <thead>
+                    <tr>
+                        <th>Pasajeros Seleccionados</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody id="body_productos">
+
+                </tbody>
+
+            </table>
+        </section>
+
+
+        <section>
+
+
+            <form id="cantidad_de_dias">
+                <br><br>
+                <input type="text" id="auto_texto" autocomplete="off" size="25"
+                    placeholder="Seleccionar Dias a Vacacionar" />
+                <input type="number" id="selec_dias" autocomplete="off" min=0 max="150" />
+
+                <button type="submit">Agregar Dias</button>
+            </form>
+
+            <table id="tabla_productos1">
+
+                <thead>
+                    <tr>
+                        <th>Dias Seleccionados</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody id="body_productos1">
+
+                </tbody>
+
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="../turismo.js/cotizador.js"></script>
+</body>
+
+</html>
