@@ -1,198 +1,208 @@
-/*let cantidadDePersonas = parseInt(prompt("Sera un placer ayudarte, Porfavor dime cuantas personas viajan MAXIMO 5 PERSONAS POR TRANSACCION"));
-function Persona(nombre,apellido,edad,dni){
+//ARRAY PARA CARGAR DATOS EN LOCALSTORAGE
+let usuarios = [];
 
-    this.nombre = nombre;
-    this.apellido = apellido;
-    this.edad = edad;
-    this.dni = dni;
+const formulario = document.getElementById("formulario_cotizador");
 
-}
-
-if(cantidadDePersonas==1){
-    const persona1= new Persona(prompt("dame el nombre del primer pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-    console.log("Los datos del pasajero 1 son "+"\n")
-    for(const propiedad in persona1){
-        
-        console.log(" "+propiedad+" :"+persona1[propiedad])
-    }
-}else if(cantidadDePersonas==2){
-    const persona1= new Persona(prompt("dame el nombre del primer pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-    const persona2= new Persona(prompt("dame el nombre del segundo pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-    
-    console.log("Los datos del pasajero 1 son "+"\n")
-    for(const propiedad in persona1){
-        console.log(" "+propiedad+" :"+persona1[propiedad])
-    }
-    console.log("Los datos del pasajero 2 son "+"\n")
-    for(const propiedad in persona2){
-        console.log(" "+propiedad+" :"+persona2[propiedad])
-    }
-}else if (cantidadDePersonas==3){ 
-    const persona1= new Persona(prompt("dame el nombre del primer pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-    const persona2= new Persona(prompt("dame el nombre del segundo pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-    const persona3= new Persona(prompt("dame el nombre del tercer pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-   
-    console.log("Los datos del pasajero 1 son "+"\n")
-    for(const propiedad in persona1){
-        console.log(" "+propiedad+" :"+persona1[propiedad])
-    }
-
-    console.log("Los datos del pasajero 2 son "+"\n")
-    for(const propiedad in persona2){
-        console.log(" "+propiedad+" :"+persona2[propiedad])
-    }
-    console.log("Los datos del pasajero 3 son "+"\n")
-    for(const propiedad in persona3){
-        console.log(" "+propiedad+" :"+persona3[propiedad])
-    }
-    
-}else if(cantidadDePersonas==4){
-
-    const persona1= new Persona(prompt("dame el nombre del primer pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-    const persona2= new Persona(prompt("dame el nombre del segundo pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-    const persona3= new Persona(prompt("dame el nombre del tercer pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-    const persona4= new Persona(prompt("dame el nombre del cuarto pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-
-    console.log("Los datos del pasajero 1 son "+"\n")
-    for(const propiedad in persona1){
-        console.log(" "+propiedad+" :"+persona1[propiedad])
-    }
-
-    console.log("Los datos del pasajero 2 son "+"\n")
-    for(const propiedad in persona2){
-        console.log(" "+propiedad+" :"+persona2[propiedad])
-    }
-    console.log("Los datos del pasajero 3 son "+"\n")
-    for(const propiedad in persona3){
-        console.log(" "+propiedad+" :"+persona3[propiedad])
-    }
-    console.log("Los datos del pasajero 4 son "+"\n")
-    for(const propiedad in persona4){
-        console.log(" "+propiedad+" :"+persona4[propiedad])
-    }
-
-}else if(cantidadDePersonas==5){
-
-    const persona1= new Persona(prompt("dame el nombre del primer pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-    const persona2= new Persona(prompt("dame el nombre del segundo pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-    const persona3= new Persona(prompt("dame el nombre del tercer pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-    const persona4= new Persona(prompt("dame el nombre del cuarto pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-    const persona5= new Persona(prompt("dame el nombre del quinto pasajero"),prompt("Dame el apellido"),prompt("dame la edad"),prompt("Dame el dni") );
-
-    console.log("Los datos del pasajero 1 son "+"\n")
-    for(const propiedad in persona1){
-        console.log(" "+propiedad+" :"+persona1[propiedad])
-    }
-
-    console.log("Los datos del pasajero 2 son "+"\n")
-    for(const propiedad in persona2){
-        console.log(" "+propiedad+" :"+persona2[propiedad])
-    }
-    console.log("Los datos del pasajero 3 son "+"\n")
-    for(const propiedad in persona3){
-        console.log(" "+propiedad+" :"+persona3[propiedad])
-    }
-    console.log("Los datos del pasajero 4 son "+"\n")
-    for(const propiedad in persona4){
-        console.log(" "+propiedad+" :"+persona4[propiedad])
-    }
-    console.log("Los datos del pasajero 5 son "+"\n")
-    for(const propiedad in persona5){
-        console.log(" "+propiedad+" :"+persona5[propiedad])
-    }
-
-}else alert("ERROR HAS SELECCIONADO MAS DE 5 PASAJEROS o Ningun Pasajero");
-
- 
-
-let cantidadDeDias= prompt("AHORA DIME CUANTOS DIAS QUIERES VACACIONAR");
-
-console.log("\n"+"\n"+"OK Has Seleccionado "+"\n"+"Pasajeros :"+cantidadDePersonas+"\n"+"\n"+"Dias :"+cantidadDeDias)
-
-console.log("------PAQUETE 1 : DELUXE ------"+"\n"+"\n")
-console.log("Paquete Deluxe Tiene un costo de 8000 ARS por persona el Dia y cuenta con los siguientes servicios :"+"\n"+"\n"
-+"--HOTEL 5 EXTRELLAS LA MANSION DELUXE--"+"\n"+"* Comidas Completas"+"\n"+"* Traslado Aeropuerto---Hotel"+"\n"+
-"* Dia de Playa con todas las comodidades Incluidas"+"\n"+"* Servicios Varios"+"\n");
-
-
-
-function paquete1(valorPaquete,pasajeros,dias){
-
-resultado=valorPaquete*pasajeros*dias
-
-
-}
-
-function mostrar(mensaje){
-    console.log(mensaje)
-}
-
-paquete1(8000,(cantidadDePersonas),(cantidadDeDias));
-mostrar("\n"+"El Valor Total del PAQUETE DELUXE segun los pasajeros y Dias informados es : "+resultado+" ARS"+"\n"+"\n");
-
-//
-console.log("------PAQUETE 2 : PREMIUM ------"+"\n"+"\n")
-console.log("Paquete Premium Tiene un costo de 5000 ARS por persona el Dia y cuenta con los siguientes servicios :"+"\n"+"\n"
-+"--HOTEL 3 EXTRELLAS DOÑA BARBARA--"+"\n"+"* Almuerzo Incluido"+"\n"+"* Traslado Aeropuerto---Hotel"+"\n"+"* Servicios Varios"+"\n");
-
-
-
-function paquete2(valorPaquete,pasajeros,dias){
-
-resultado=valorPaquete*pasajeros*dias
-
-
-}
-
-function mostrar2(mensaje){
-    console.log(mensaje)
-}
-
-paquete2(5000,(cantidadDePersonas),(cantidadDeDias));
-mostrar2("\n"+"---El Valor Total del PAQUETE PREMIUM--- segun los pasajeros y Dias informados es : "+resultado+" ARS"+"\n"+"\n");
-
-//
-console.log("------PAQUETE 3 : LOW-COST ------"+"\n"+"\n")
-console.log("Paquete Low-Cost Tiene un costo de 3000 ARS por persona el Dia y cuenta con los siguientes servicios :"+"\n"+"\n"
-+"--Cabañas Coloniales Don Jesus--"+"\n"+"* Desayuno Incluido"+"\n"+"* Agua y Bloqueador Solar Incluido"+"\n")
-
-
-
-function paquete3(valorPaquete,pasajeros,dias){
-
-resultado=valorPaquete*pasajeros*dias
-
-
-}
-
-function mostrar3(mensaje){
-    console.log(mensaje)
-}
-
-paquete3(3000,(cantidadDePersonas),(cantidadDeDias));
-mostrar3("\n"+"El Valor Total del PAQUETE LOW-COST segun los pasajeros y Dias informados es : "+resultado+" ARS");*/
-
-
-let pasajeros = [];
-const formularioAgregarProducto = document.getElementById("formulario_agregar_pasajero");
-formularioAgregarProducto.addEventListener("submit", (e) => {
-
+//EVENTO SUBMIT DEL FORMULARIO
+formulario.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    // Obtengo nombre y stock
-    const inputStockProducto = document.getElementById("stock_producto");
+    const inputTitular = document.getElementById("agregar_titular");
+    const inputSeleccion = document.getElementById("seleccion");
+    const inputPasajeros = document.getElementById("cantidad_pasajero");
+    const inputDias = document.getElementById("selec_dias");
 
-    const stockProducto = inputStockProducto.value;
-    pasajeros.push({
-        stock: parseInt(stockProducto),
+    const nombreTitular = inputTitular.value;
+    const seleccionDestino = inputSeleccion.value;
+    const seleccionPasajero = inputPasajeros.value;
+    const seleccionDias = inputDias.value;
 
+    usuarios.push({
+        nombre: nombreTitular,
+        destino: seleccionDestino,
+        pasajeros: seleccionPasajero,
+        dias: seleccionDias,
 
 
     });
 
-    let mensaje = document.getElementById("menssage");
-
-
+    localStorage.setItem("usuarios", JSON.stringify(usuarios));
 });
 
-// AUN FALTA CONSTRUIR DEJO EL CODIGO DE ARRIBA COMENTADO DEBIDO A QUE NECESITO USAR PRONTO ALGUNAS COSAS
+// FUNCION QUE IMPRIME EL VALOR DE LOS PAQUETES EN EL TEXTAREA
+function resultado_paquete() {
+
+
+    const operacion = (8000 * (valorInput1) * (valorInput2));
+    const operacion2 = (5000 * (valorInput1) * (valorInput2));
+    const operacion3 = (3000 * (valorInput1) * (valorInput2));
+    document.getElementById("texto_compra").value = "Gracias por elegirnos los paquetes Disponibles Son los Siguientes: " + "\n" + "\n" + "------PAQUETE 1 : DELUXE ------" + "\n" +
+        "Deluxe Tiene un costo de 8000 ARS por persona el Dia y cuenta con los siguientes servicios :" + "\n" + "\n"
+        + "--HOTEL 5 EXTRELLAS LA MANSION DELUXE--" + "\n" + "* Comidas Completas" + "\n" + "* Traslado Aeropuerto---Hotel" + "\n" +
+        "* Dia de Playa con todas las comodidades Incluidas" + "\n" + "* Servicios Varios" + "\n" +
+        "EL TOTAL SEGUN LOS DIAS Y PASAJEROS INFORMADOS ES :" + operacion + "\n" + "\n" + "\n" + "------PAQUETE 2: PREMIUM------" + "\n" + " Tiene un costo de 5000 ARS por persona el Dia y cuenta con los siguientes servicios :" + "\n" + "\n"
+        + "--HOTEL 3 EXTRELLAS DOÑA BARBARA--" + "\n" + "* Almuerzo Incluido" + "\n" + "* Traslado Aeropuerto---Hotel" + "\n" + "* Servicios Varios" + "\n" +
+        "EL TOTAL SEGUN LOS DIAS Y PASAJEROS INFORMADOS ES :" + operacion2 + "\n" + "\n" + "\n" + "------Paquete Low-Cost------" + "\n" + "Tiene un costo de 3000 ARS por persona el Dia y cuenta con los siguientes servicios :" + "\n" + "\n"
+        + "--Cabañas Coloniales Don Jesus--" + "\n" + "* Desayuno Incluido" + "\n" + "\n" +
+        "EL TOTAL SEGUN LOS DIAS Y PASAJEROS INFORMADOS ES :" + operacion3;
+}
+
+
+let valorInput1 = 0;
+let valorInput2 = 0;
+
+const cantidad_pasajero = document.getElementById("cantidad_pasajero");
+const selec_dias = document.getElementById("selec_dias");
+
+cantidad_pasajero.addEventListener("change", () => {
+    valorInput1 = cantidad_pasajero.value;
+
+})
+selec_dias.addEventListener("change", () => {
+    valorInput2 = selec_dias.value;
+
+})
+
+
+
+
+// funciones para agregar  pasajeros y dias en cotizador
+
+
+function seleccionTitular() {
+
+    let titular = document.getElementById("agregar_titular").value;
+    document.getElementById("imprimir_Titular").value = "Bienvenido: " + titular;
+}
+
+function seleccionOpcion() {
+
+    let option = document.getElementById("seleccion").value;
+    document.getElementById("imprimir_seleccion").value = "Ok has Eligido como Destino: " + option;
+}
+
+
+function enviarTexto() {
+
+    let pasajeros = document.getElementById("cantidad_pasajero").value;
+    document.getElementById("pasajero_resultado").value = "Ok Pasajeros seleccionados: " + pasajeros;
+}
+
+function enviarTexto2() {
+
+    let dias = document.getElementById("selec_dias").value;
+    document.getElementById("dia_resultado").value = "Ok Dias seleccionados: " + dias;
+
+}
+
+// reset de inputs
+function limpiar_seleccion() {
+    document.getElementById("imprimir_seleccion").value = ""
+}
+function limpiar_pasajeros() {
+    document.getElementById("cantidad_pasajero").value = ""
+    document.getElementById("pasajero_resultado").value = ""
+
+}
+
+function limpiar_dias() {
+    document.getElementById("selec_dias").value = "";
+    document.getElementById("dia_resultado").value = "";
+}
+function limpiar_todo() {
+    document.getElementById("agregar_titular").value = ""
+    document.getElementById("imprimir_Titular").value = ""
+    document.getElementById("seleccion").value = ""
+    document.getElementById("imprimir_seleccion").value = ""
+    document.getElementById("cantidad_pasajero").value = ""
+    document.getElementById("pasajero_resultado").value = ""
+    document.getElementById("selec_dias").value = ""
+    document.getElementById("dia_resultado").value = ""
+    document.getElementById("texto_compra").value = ""
+
+}
+
+//eventos para llamar a las funciones
+document.getElementById("compra_confirmar").onclick = function () {
+
+
+    Swal.fire({
+        title: 'Paquete Deluxe Comprado Con Exito!',
+        text: 'Disfruta De Tu viaje',
+        imageUrl: '../img/confirmar_compra.jpg',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+    })
+
+}
+document.getElementById("compra_confirmar2").onclick = function () {
+
+
+    Swal.fire({
+        title: 'Paquete Premium Comprado Con Exito!',
+        text: 'Disfruta De Tu viaje',
+        imageUrl: '../img/confirmar_compra.jpg',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+    })
+
+}
+document.getElementById("compra_confirmar3").onclick = function () {
+
+
+    Swal.fire({
+        title: 'Paquete Low-Cost Comprado Con Exito!',
+        text: 'Disfruta De Tu viaje',
+        imageUrl: '../img/confirmar_compra.jpg',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Custom image',
+    })
+
+}
+
+document.getElementById("titular").onclick = function () {
+    seleccionTitular()
+
+}
+document.getElementById("confirmar").onclick = function () {
+    seleccionOpcion()
+
+}
+
+document.getElementById("agregar_pasajero").onclick = function () {
+    enviarTexto()
+}
+document.getElementById("agregar_dias").onclick = function () {
+    enviarTexto2()
+}
+
+document.getElementById("resumen").onclick = function () {
+    resultado_paquete()
+
+}
+//eventos para borrar campos
+document.getElementById("reset_seleccion").onclick = function () {
+    limpiar_seleccion()
+}
+
+document.getElementById("reset1").onclick = function () {
+    limpiar_pasajeros()
+}
+
+document.getElementById("reset2").onclick = function () {
+    limpiar_dias()
+}
+//Borrar Todo
+document.getElementById("delete_all").onclick = function () {
+    limpiar_todo()
+}
+
+  //ACOMODAR RESPONSIVE Y DETALLES  --falta una parte-- (sobre todo contenedor en index)
+  //verificar funciones onclick de los videos iframe de todas las pages
+
+  // MANEJO DE PROMESAS CON FECTH
+  // UN OBJETO Y UN ARRAY Y METODOS
+

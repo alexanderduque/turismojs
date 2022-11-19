@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Subcategory Carousel</title>
+    <title>Turismo Sin Fronteras</title>
 </head>
 
 <body>
@@ -46,10 +47,12 @@
                                     <a class="nav-link active" aria-current="page" href="./pages/africa.html">Africa</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="./pages/londres.html">Londres</a>
+                                    <a class="nav-link active" aria-current="page"
+                                        href="./pages/londres.html">Londres</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="./pages/turquia.html">Turquia</a>
+                                    <a class="nav-link active" aria-current="page"
+                                        href="./pages/turquia.html">Turquia</a>
                                 </li>
 
                                 <li class="nav-item dropdown">
@@ -60,11 +63,6 @@
                                     <ul class="dropdown-menu dropdown-menu-dark">
                                         <li><a class="dropdown-item" href="./pages/cotizador.html">Cotizador De Paquetes
                                                 Turisticos</a></li>
-                                        <li><a class="dropdown-item" href="#">Sobre Nosotros</a></li>
-                                        <li>
-                                            <hr class="dropdown-divider">
-                                        </li>
-                                        <li><a class="dropdown-item" href="#">Contacto</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -89,7 +87,7 @@
         </section>
 
         <section class="slider-index">
-
+            <div>
             <div class="carousel">
 
                 <div class="slick-list" id="slick-list">
@@ -110,6 +108,16 @@
                                 <a href="/">
 
                                     <picture>
+                                        <img src="./img/avionIndex.jpg" alt="Image">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slick">
+                            <div>
+                                <a href="/">
+
+                                    <picture>
                                         <img src="./img/caribeIndex2.jpg" alt="Image">
                                     </picture>
                                 </a>
@@ -120,7 +128,7 @@
                                 <a href="/">
 
                                     <picture>
-                                        <img src="./img/londresIndex2.jpg" alt="Image">
+                                        <img src="./img/turistasIndex4.jpg" alt="Image">
                                     </picture>
                                 </a>
                             </div>
@@ -130,7 +138,7 @@
                                 <a href="/">
 
                                     <picture>
-                                        <img src="./img/turistasAmigosIndex.jpg" alt="Image">
+                                        <img src="./img/excursionIndex.jpg" alt="Image">
                                     </picture>
                                 </a>
                             </div>
@@ -140,7 +148,7 @@
                                 <a href="/">
 
                                     <picture>
-                                        <img src="./img/turistasIndex.jpg" alt="Image">
+                                        <img src="./img/turistasIndex3.jpg" alt="Image">
                                     </picture>
                                 </a>
                             </div>
@@ -150,7 +158,7 @@
                                 <a href="/">
 
                                     <picture>
-                                        <img src="./img/turquiaIndex.jpg" alt="Image">
+                                        <img src="./img/excursionIndex2.jpg" alt="Image">
                                     </picture>
                                 </a>
                             </div>
@@ -160,7 +168,7 @@
                                 <a href="/">
 
                                     <picture>
-                                        <img src="./img/turquiaIndex.jpg" alt="Image">
+                                        <img src="./img/turistasIndex5.jpg" alt="Image">
                                     </picture>
                                 </a>
                             </div>
@@ -170,17 +178,7 @@
                                 <a href="/">
 
                                     <picture>
-                                        <img src="./img/turquiaIndex.jpg" alt="Image">
-                                    </picture>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="slick">
-                            <div>
-                                <a href="/">
-
-                                    <picture>
-                                        <img src="./img/turquiaIndex.jpg" alt="Image">
+                                        <img src="./img/excursionIndex3.jpg" alt="Image">
                                     </picture>
                                 </a>
                             </div>
@@ -196,53 +194,104 @@
             </div>
             </div>
         </section>
-
-        <h2 class="t2">Viaja Por El mundo Junto A Nosotros</h2>
+        <div class="t2">
+        <h2 >Viaja Por El mundo Junto A Nosotros</h2>
+        <div>
+        <img class="index_img_principal" src="./img/princiapalIndex.jpg" alt="">
+    </div>
+    </div>
+        <div class="divt3" data-aos="fade-up"
+        data-aos-duration="1000" >
+        <h2 class="t3">Destinos Destacados</h2>
+    </div>
         <section class="grid-container-main">
 
-            <div class="index1">
-                <img src="./img/caribeIndex2.jpg" alt="">
+            <div class="index1" data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="2000">
+                <img src="./img/venezuelaSection.jpg" alt="">
+                <strong class="s1">Venezuela Destino Caribeño <br> Es una Experiencia Inolvidable </strong>
+
+
             </div>
 
-            <div class="index2">
-                <img src="./img/caribeIndex2.jpg" alt="">
+            <div class="index2" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="2000">
+                <img src="./img/africaSection.jpg" alt="">
+                <strong class="s1">Africa Destino Aventurero <br> Podras estar en contacto con la naturaleza</strong>
             </div>
 
-            <div class="index3">
-                <img src="./img/caribeIndex2.jpg" alt="">
+            <div class="index3" data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="2000">
+                <img src="./img/londresSection.jpg" alt="">
+                <strong class="s1">Londres Destino Moderno <br> Conoceras una ciudad Increible</strong>
             </div>
 
-            <div class="index4">
-                <img src="./img/caribeIndex2.jpg" alt="">
+            <div class="index4" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="2000">
+                <img src="./img/turquiaSection.jpg" alt="">
+                <strong class="s1">Turquia Destino con Diversas culturas <br> Un lugar para desconectar de la rutina
+                </strong>
             </div>
 
 
         </section>
+        <div data-aos="fade-up"
+        data-aos-duration="1000">
+        <h2 class="t4">¿Porque Elegirnos?</h2>
+        </div>
+        <section class="contenedor_porque_elegirnos "  data-aos="fade-right" data-aos-duration="3000">
+            <img class="back-img-index" src="./img/montañaIndex.jpg" alt="">
+
+            <div>
+                <p class="p1"> <img class="p1_icon" src="./img/experiencia.png" alt=""><br> Experiencia <br>
+                    experiencia y trayectoria en la industria del turismo  
+                    Estamos en constante<br> búsqueda de productos genuinos La mayor cantidad  de los
+                    insumos que ofrecemos son <br>de producción local.De esta manera aportamos nuestro granito de arena
+                    a la economía regional.</p>
+
+                <p class="p2"> <img class="p2_icon" src="./img/original.png" alt=""> <br> Originalidad <br>
+                    Somos creadores de excursiones, es nuestro sello distintivo. Turismo Sin Fronteras siempre va a tener <br>
+                    actividades nuevas, ya que trabajamos constantemente para ofrecer <br> más productos al mercado
+                    turístico. </p>
+
+                <p class="p3"> <img class="p3_icon" src="./img/ventajas.png" alt=""> <br> Ventajas Competitivas <br>
+                    Procuramos que conozcas el Mundo desde un enfoque diferente, <br> sin dejar de recorrer los lugares
+                    emblemáticos. Ofrecemos las excursiones <br> más completas y exclusivas. ¡Dejá
+                    que Turismo Sin Fronteras te sorprenda!</p>
+
+            </div>
+
+        </section>
 
     </main>
-
+    <footer>
     <section class="grid-footer-index">
 
-
-        <h3 class="footer-contacto">Contacto</h3>
+        <div>
+        <h2 class="footer-contacto">Contacto</h2>
+    </div>
 
 
         <ul class="li-footer">
 
-            <li><strong>Dirección:</strong> <span>Av Libertador 1000,Buenos Aires, Argentina.</span></li><br> <br><br>
+            <br><br><li><strong>Dirección:</strong> <span>Av Libertador 1000,Buenos Aires, Argentina.</span></li><br> <br>
             <li> <strong>WhatsApp:</strong> <span>+54 116000000</span></li><br><br>
-            <li> <strong>Email:</strong> <span><a
-                        href="mailto:info@tierraturismo.com">info@turismosinfronteras.com</a></span></li>
+            <li> <strong>Email: </strong> <span>info@turismosinfronteras.com </span>
+                    
         </ul>
 
 
 
         <div class="redes-index">
-            <span class="footer-copyright">© 2022 Tierra Turismo.</span>
-            <a href="https://www.instagram.com/"><img class="img" src="../img/instagram.png" alt="instagram"></a>
-            <a href="https://es-la.facebook.com/"><img class="img" src="../img/facebook.png" alt="facebook"></a>
-            <a href="https://twitter.com/?lang=es"><img class="img" src="../img/twitter.png" alt="twitter"></a>
-            <a href="https://www.youtube.com/"><img class="img" src="../img/youtube.png" alt="youtube"></a>
+            <span class="footer-copyright">© 2022 Turismo Sin Fronteras.</span>
+            <a href="https://www.instagram.com/"><img class="img" src="./img/instagram.png" alt="instagram"></a>
+            <a href="https://es-la.facebook.com/"><img class="img" src="./img/facebook.png" alt="facebook"></a>
+            <a href="https://twitter.com/?lang=es"><img class="img" src="./img/twitter.png" alt="twitter"></a>
+            <a href="https://www.youtube.com/"><img class="img" src="./img/youtube.png" alt="youtube"></a>
 
         </div>
 
@@ -251,7 +300,8 @@
 
 
         <div class="form-index">
-            <h2 class="formulario">Formulario</h2>
+            <h2 class="formulario">Formulario</h2><br>
+            <div>
             <form action="" method="GET">
                 <strong>Nombre :</strong>
                 <input type="text" name="nombre" value="" size="42"><br>
@@ -266,9 +316,18 @@
                 <button type="reset" id="limpiar">Limpiar Campos</button>
             </form>
         </div>
+        </div>
     </section>
+</footer>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./turismo.js/index.js"></script>
 </body>
 
 
