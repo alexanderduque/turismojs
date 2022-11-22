@@ -1,6 +1,13 @@
 //ARRAY PARA CARGAR DATOS EN LOCALSTORAGE
 let usuarios = [];
 
+//Inicar LocalStorage con lo que ya tenga guardado
+const usuariosLocal= localStorage.getItem("usuarios")
+
+if(usuariosLocal!==null){
+    usuarios=JSON.parse(usuariosLocal);
+}
+
 const formulario = document.getElementById("formulario_cotizador");
 
 //EVENTO SUBMIT DEL FORMULARIO
@@ -23,11 +30,18 @@ formulario.addEventListener("submit", (e) => {
         pasajeros: seleccionPasajero,
         dias: seleccionDias,
 
-
     });
 
     localStorage.setItem("usuarios", JSON.stringify(usuarios));
+    
+
 });
+
+// Consulta de reservas de distintos usuarios
+const usuariosJSON = localStorage.getItem("usuarios");
+const usuariosStorage = JSON.parse(usuariosJSON);
+console.log(usuarios);
+
 
 // FUNCION QUE IMPRIME EL VALOR DE LOS PAQUETES EN EL TEXTAREA
 function resultado_paquete() {
