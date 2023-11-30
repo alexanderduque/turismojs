@@ -1,0 +1,144 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destino Venezuela</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-secondary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand">Destino Venezuela</a>
+                <a class="navbar-brand">TURISMO SIN FRONTERAS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Bienvenidos A Turismo Sin Fronteras
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./venezuela.html">Venezuela</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./africa.html">Africa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./londres.html">Londres</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./turquia.html">Turquia</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Nuestros servicios
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="./cotizador.html">Cotizador De Paquetes
+                                            Turisticos</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="text" placeholder="Gracias por elegirnos"
+                                aria-label="Search">
+                            <button class="btn btn-info" type="text">Felices Vacaciones</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <img src="../img/isla margarita1.jpg" class="img-fluid" alt="...">
+
+        <div class="btn">
+
+            <div class="sport-table-wager" id="grupo1">
+                <a onclick='loadPage()' class="btn">--click para ver video del Destino--</a>
+                <iframe class="iframe" style='display:none' id="frame" width="1000" height="400"
+                    frameborder='0'></iframe>
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <section class="grid-footer-index">
+
+            <div>
+                <h2 class="footer-contacto">Contacto</h2>
+            </div>
+
+
+            <ul class="li-footer">
+
+                <br><br>
+                <li><strong>Dirección:</strong> <span>Av Libertador 1000,Buenos Aires, Argentina.</span></li><br> <br>
+                <li> <strong>WhatsApp:</strong> <span>+54 116000000</span></li><br><br>
+                <li> <strong>Email: </strong> <span>info@turismosinfronteras.com </span>
+
+            </ul>
+
+
+
+            <div class="redes-index">
+                
+                <a href="https://www.instagram.com/"><img class="img" src="../img/instagram.png" alt="instagram"></a>
+                <a href="https://es-la.facebook.com/"><img class="img" src="../img/facebook.png" alt="facebook"></a>
+                <a href="https://twitter.com/?lang=es"><img class="img" src="../img/twitter.png" alt="twitter"></a>
+                <a href="https://www.youtube.com/"><img class="img" src="../img/youtube.png" alt="youtube"></a>
+
+            </div>
+
+
+
+
+
+            <div class="form-index">
+                <h2 class="formulario">Formulario</h2><br>
+                <div>
+                    <form action="" method="GET">
+                        <strong>Nombre :</strong>
+                        <input type="text" name="nombre" value="" size="42"><br>
+                        <strong>Apellido :</strong>
+                        <input type="text" name="nombre" value="" size="42"><br>
+                        <strong>Edad :</strong>
+
+                        <input type="number" name="nombre" value="" min=0 max="150" id="number"><br><br>
+                        <label>Tu mensaje:</label> <br> <br>
+                        <textarea id="menssaje" name="mensaje" cols="70" rows="2"></textarea> <br>
+                        <button type="submit">Enviar</button>
+                        <button type="reset" id="limpiar">Limpiar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../turismo.js/index.js"></script>
+    <script src='https://code.jquery.com/jquery-1.12.4.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

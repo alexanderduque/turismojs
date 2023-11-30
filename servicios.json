@@ -1,0 +1,20 @@
+[
+
+    {
+        "servicio" : "Cocteles",
+        "precio" : 4000
+    },
+
+    {
+        "servicio" : "Golosinas",
+        "precio" : 2000
+    },
+    {
+        "servicio" : "chip con internet",
+        "precio" : 500
+    }
+
+
+
+
+]

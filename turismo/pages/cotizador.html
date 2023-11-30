@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cotizador online</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-secondary fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand">Destino Venezuela</a>
+                <a class="navbar-brand">TURISMO SIN FRONTERAS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Bienvenidos A Turismo Sin Fronteras
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./venezuela.html">Venezuela</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./africa.html">Africa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./londres.html">Londres</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./turquia.html">Turquia</a>
+                            </li>
+
+
+
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="text" placeholder="Gracias por elegirnos"
+                                    aria-label="Search">
+                                <button class="btn btn-info" type="text">Felices Vacaciones</button>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+    <main class="body_cotizador">
+        <form id="formulario_cotizador">
+            <section>
+                &nbsp&nbsp <input type="text" autocomplete="off" size="40"
+                    placeholder="Nombre y Apellido del titular De la Compra" readonly="readonly"><br><br>
+                &nbsp&nbsp <input type="text" id="agregar_titular" size="35">
+                <button type="button" id="titular"><strong>Agregar Titular</strong></button><br><br>
+
+            </section>
+
+            <section>
+                &nbsp&nbsp&nbsp&nbsp&nbsp <select name="seleccion" id="seleccion">
+                    <option value="venezuela">venezuela</option>
+                    <option value="africa">africa</option>
+                    <option value="londres">londres</option>
+                    <option value="turquia">turquia</option>
+
+                </select>
+                <button type="button" id="confirmar"><strong>Agregar Destino</strong></button>
+                <button type="button" id="reset_seleccion"><strong>Restablecer Destino</strong></button><br><br>
+
+
+            </section>
+
+            <section id="formulario">
+                <input type="text" autocomplete="off" size="26" placeholder="Seleccionar pasajeros" />
+                <input type="number" id="cantidad_pasajero" autocomplete="off" min=0 max="100" />
+
+                <button type="button" id="agregar_pasajero"><strong>-Agregar Pasajeros-</strong></button>
+                <button type="button" id="reset1"><strong>-Restablecer Pasajeros-</strong></button><br><br>
+
+
+            </section>
+
+
+            <section>
+                <input type="text" id="auto_texto" autocomplete="off" size="26"
+                    placeholder="Seleccionar Dias a Vacacionar" />
+                <input type="number" id="selec_dias" autocomplete="off" min=0 max="100" />
+                <button type="button" id="agregar_dias"><strong>----Agregar Dias----</strong></button>
+                <button type="button" id="reset2"> <strong>----Restablecer Dias----</strong></button><br><br>
+
+
+            </section>
+
+            <section>
+
+                <input type="text" id="imprimir_Titular" size="40" readonly="readonly"><br><br>
+                <input type="text" id="imprimir_seleccion" size="40" readonly="readonly"><br><br>
+                <input type="text" id="pasajero_resultado" size="40" readonly="readonly"><br> <br>
+                <input type="text" id="dia_resultado" size="40" readonly="readonly"><br><br>
+                <button type="button" id="delete_all">Restablecer Todo</button> &nbsp; &nbsp; &nbsp;
+                <button type="submit" id="resumen">---Continuar---</button><br><br>
+                <textarea id="texto_compra" cols="90" rows="20"></textarea><br><br>
+                <button type="button" id="compra_confirmar">--Comprar Deluxe--</button>
+                <button type="button" id="compra_confirmar2">--Comprar Premium--</button>
+                <button type="button" id="compra_confirmar3">--Comprar Low-cost--</button>
+
+
+
+
+            </section>
+        </form>
+    </main>
+
+    <footer>
+        <section class="grid-footer-index">
+
+            <div>
+                <h2 class="footer-contacto">Contacto</h2>
+            </div>
+
+
+            <ul class="li-footer">
+
+                <br><br>
+                <li><strong>Dirección:</strong> <span>Av Libertador 1000,Buenos Aires, Argentina.</span></li><br> <br>
+                <li> <strong>WhatsApp:</strong> <span>+54 116000000</span></li><br><br>
+                <li> <strong>Email: </strong> <span>info@turismosinfronteras.com </span>
+
+            </ul>
+
+
+
+            <div class="redes-index">
+                <a href="https://www.instagram.com/"><img class="img" src="../img/instagram.png" alt="instagram"></a>
+                <a href="https://es-la.facebook.com/"><img class="img" src="../img/facebook.png" alt="facebook"></a>
+                <a href="https://twitter.com/?lang=es"><img class="img" src="../img/twitter.png" alt="twitter"></a>
+                <a href="https://www.youtube.com/"><img class="img" src="../img/youtube.png" alt="youtube"></a>
+
+            </div>
+
+
+
+
+
+            <div class="form-index">
+                <h2 class="formulario">Formulario</h2><br>
+                <div>
+                    <form action="" method="GET">
+                        <strong>Nombre :</strong>
+                        <input type="text" name="nombre" value="" size="42"><br>
+                        <strong>Apellido :</strong>
+                        <input type="text" name="nombre" value="" size="42"><br>
+                        <strong>Edad :</strong>
+
+                        <input type="number" name="nombre" value="" min=0 max="150" id="number"><br><br>
+                        <label>Tu mensaje:</label> <br> <br>
+                        <textarea id="menssaje" name="mensaje" cols="70" rows="2"></textarea> <br>
+                        <button type="submit">Enviar</button>
+                        <button type="reset" id="limpiar">Limpiar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../turismo.js/cotizador.js"></script>
+
+
+</body>
+
+</html>
